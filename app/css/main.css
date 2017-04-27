@@ -163,7 +163,7 @@ html {
     border-radius: 10px;
     outline: none;
     box-shadow: 0px 3px 0px 0px transparent;
-    font-size: 0.9375em;
+    font-size: 0.9375rem;
     text-align: center;
     font-family: openSans_bold;
     padding: 3px 21px;
@@ -219,7 +219,7 @@ header {
         border-radius: 10px;
         outline: none;
         box-shadow: 0px 3px 0px 0px #a73239;
-        font-size: 1.4375em;
+        font-size: 1.4375rem;
         text-align: center;
         font-family: openSans_bold;
         padding: 9px 67px;
@@ -256,7 +256,7 @@ header {
         border-radius: 10px;
         outline: none;
         box-shadow: 0px 3px 0px 0px #a73239;
-        font-size: 1.1875em;
+        font-size: 1.1875rem;
         text-align: center;
         font-family: openSans_bold;
         padding: 16px 20px;
@@ -301,7 +301,7 @@ header {
       border-radius: 10px;
       outline: none;
       box-shadow: 0px 3px 0px 0px #a73239;
-      font-size: 1.3125em;
+      font-size: 1.3125rem;
       text-align: center;
       font-family: openSans_bold;
       padding: 10px 20px;
@@ -576,7 +576,7 @@ footer {
         border-radius: 10px;
         outline: none;
         box-shadow: 0px 3px 0px 0px #a73239;
-        font-size: 0.875em;
+        font-size: 0.875rem;
         text-align: center;
         font-family: openSans_bold;
         text-transform: uppercase;
@@ -714,7 +714,7 @@ footer {
       border-radius: 10px;
       outline: none;
       box-shadow: 0px 3px 0px 0px transparent;
-      font-size: 1.125em;
+      font-size: 1.125rem;
       text-align: center;
       font-family: openSans_bold;
       font-family: openSans_regular;
@@ -729,7 +729,7 @@ footer {
       border-radius: 10px;
       outline: none;
       box-shadow: 0px 3px 0px 0px #a73239;
-      font-size: 1.125em;
+      font-size: 1.125rem;
       text-align: center;
       font-family: openSans_bold;
       font-family: openSans_regular;
@@ -763,7 +763,7 @@ footer {
         border-radius: 10px;
         outline: none;
         box-shadow: 0px 3px 0px 0px #a73239;
-        font-size: 1.128em;
+        font-size: 1.128rem;
         text-align: center;
         font-family: openSans_bold;
         font-family: openSans_regular;
@@ -876,7 +876,7 @@ footer {
       border-radius: 10px;
       outline: none;
       box-shadow: 0px 3px 0px 0px #a73239;
-      font-size: 1.125em;
+      font-size: 1.125rem;
       text-align: center;
       font-family: openSans_bold;
       margin: 30px 0 35px 0;
@@ -1013,7 +1013,7 @@ footer {
       border-radius: 10px;
       outline: none;
       box-shadow: 0px 3px 0px 0px #a73239;
-      font-size: 1em;
+      font-size: 1rem;
       text-align: center;
       font-family: openSans_bold;
       padding: 10px 20px;
@@ -1323,7 +1323,7 @@ footer {
     border-radius: 10px;
     outline: none;
     box-shadow: 0px 3px 0px 0px #a73239;
-    font-size: 1em;
+    font-size: 1rem;
     text-align: center;
     font-family: openSans_bold;
     padding: 5px 30px;
@@ -1376,7 +1376,7 @@ footer {
         border-radius: 10px;
         outline: none;
         box-shadow: 0px 3px 0px 0px #a73239;
-        font-size: 1em;
+        font-size: 1rem;
         text-align: center;
         font-family: openSans_bold;
         padding: 10px 20px;

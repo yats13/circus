@@ -143,7 +143,7 @@
     }
     #text .text {
 
-        font-size: 1.54rem;
+        font-size: 0.95rem;
     }
     nav .social {
         margin: 17px 0 0 0;
@@ -196,7 +196,7 @@
         height: 226px;
     }
     #slide_and_more .more_about_circus {
-        font-size: 0.75em;
+       font-size: 0.84rem;
         line-height: 14px;
 
         padding: 0px 0 0 40px;
@@ -224,10 +224,10 @@
         padding: 0 3px 0 3px;
     }
     #our_advantages .our_block:nth-child(1) a .inside_block h3 {
-        font-size: 4rem;
+        font-size: 3rem;
     }
     #our_advantages .our_block a .inside_block h3 {
-         font-size: 20px;
+         font-size: 1.3125rem;
      }
     #our_advantages {
          margin: 0;
@@ -326,7 +326,7 @@
 
 
     #slide_and_more .more_about_circus{
-    font-size: 12px;
+    font-size: 0.8125rem;
     line-height: 15px;
     text-align: center;
     padding: 20px 33px 8px 33px;
@@ -408,11 +408,11 @@
     }
 
     #map .map .address {
-    width: 120px;
-    height: 120px;
-    left: 35px;
-    top: 35px;
-    font-size: 1.1rem;
+        width: 120px;
+        height: 120px;
+        left: 35px;
+        top: 35px;
+        font-size: 0.7rem;
     }
 
     #map .map .address:before, #map .map .address:after {
@@ -753,7 +753,7 @@
     }
 
     #our_advantages{
-      margin: 0 0 10px 0;
+      margin: 0 0 6px 0;
     }
 
     /*#our_advantages div{
@@ -937,7 +937,7 @@
         /*margin: 304px 0 61px 0;*/
     }
     #our_advantages .our_block:nth-child(1) a .inside_block h3 {
-        font-size: 2.5rem;
+        font-size: 1.7rem;
     }
     #our_advantages .our_block a .inside_block h3 {
         font-size: 15px;
