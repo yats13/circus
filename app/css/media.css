@@ -1,0 +1,1126 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1500px) {
+    #slide_and_more .more_about_circus {
+        padding: 0 0 0 100px;
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    #slide_and_more .slide .carousel-inner .item img {
+        max-height: 320px;
+
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    #slide_and_more .slide .carousel-inner .item img {
+        max-height: 320px;
+
+    }
+    .circus_menu .gen-nav li a {
+        font-size: 1.4em;
+    }
+    #slide_and_more .more_about_circus {
+        padding: 0 0 0 100px;
+        font-size: 1.2em;
+    }
+    #events .event {
+        min-height: 316px;
+    }
+    #our_advantages .our_block a .inside_block h3 {
+        font-size: 31px;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+  /**/
+    .circus_menu .gen-nav li a {
+        font-size: 1.1em;
+    }
+    #slide_and_more .slide .carousel-inner .item img {
+        max-height: 320px;
+
+    }
+    #slide_and_more .more_about_circus {
+        padding: 0 0 0 100px;
+        font-size: 1.1em;
+    }
+    #artists .btn-group .btn-primary {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 1170px) {
+    .circus_menu .gen-nav .menu_separator {
+        display: none;
+    }
+
+    .circus_menu .gen-nav li {
+        margin: 0 5px 0 5px;
+    }
+    .circus_menu .gen-nav {
+        width: 76%;
+    }
+    .circus_menu .gen-nav li a {
+        font-size: 1.17em;
+    }
+
+    #slide_and_more .more_about_circus {
+        padding: 0 0 0 53px;
+        font-size: 1em;
+    }
+    #slide_and_more .slide .carousel-inner .item img {
+        max-height: 264px;
+    }
+    #slide_and_more .more_about_circus div {
+        margin: 12px 0 0 0;
+    }
+    nav .social {
+    
+        padding-right: 0;
+    }
+    footer .title {
+        font-size: 18px;
+    }
+    
+}
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 992px) {
+    .menu_separator {
+        display: none;
+    }
+    .circus_menu .gen-nav {
+        width: 79%;
+        padding: 26px 0 0 0;
+    }
+    .circus_menu {
+        height: 61px;
+
+    }
+    .circus_menu .gen-nav li a {
+        font-size: 1.1em;
+    }
+    .circus_menu .logo {
+        height: 52px;
+    }
+    .circus_menu .logo img {
+        height: 100%;
+    }
+    #slide_and_more .more_about_circus {
+        padding: 0px 0 0 45px;
+        font-size: 0.95em;
+     }
+    #slide_and_more .more_about_circus div button {
+        font-size: 17px;
+        padding: 13px 20px;
+    }
+    #slide_and_more .slide .carousel-inner .item img {
+        max-height: 264px;
+        height: 235px;
+    }
+    #events .event {
+        min-height: 220px;
+    }
+    #events .event h2 {
+        font-size: 3em;
+        padding: 57px 0 22px 0;
+    }
+    #events .event a {
+        font-size: 17px;
+    }
+    #our_advantages .our_block a .inside_block h3 {
+        font-size: 25px;
+    }
+    #our_advantages .our_block:nth-child(1) a .inside_block h3 {
+        font-size: 4.5rem;
+    }
+    #text .text {
+
+        font-size: 1.54rem;
+    }
+    nav .social {
+        margin: 17px 0 0 0;
+        padding-right: 3px;
+    }
+
+    #artists .btn-group {
+        border: none;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #artists .btn-group .btn-primary {
+        border: 1px solid #fe4c57;
+        border-radius: 30px;
+        margin: 0 5px 10px 0;
+    }
+    #artists .btn-group .btn:first-child, #artists .btn-group .btn:last-child {
+    border-radius: 30px;
+}
+
+}
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {
+  /*Disable Animation on Mobile Devices*/
+    .hamburger {
+        display: block;
+    }
+    .gen-nav {
+        display: none;
+    }
+    .circus_menu .lang {
+        display: none;
+    }
+    .circus_menu .social {
+        position: relative;
+        float: inherit;
+        right: -13px;
+        padding-right: 0;
+        margin: 13px 0 0 0;
+    }
+    .circus_menu .social div a img {
+        width: 38px;
+    }
+    .circus_menu {
+        
+    }
+    #slide_and_more .slide .carousel-inner .item img {
+        height: 226px;
+    }
+    #slide_and_more .more_about_circus {
+        font-size: 0.75em;
+        line-height: 14px;
+
+        padding: 0px 0 0 40px;
+    }
+    #slide_and_more {
+        padding: 25px 0;
+    }
+
+    header .first_ecran h1 {
+        /*margin: 455px 0 61px 0;*/
+    }
+
+    #events .event h2 {
+        font-size: 2em;
+    }
+    #events .event {
+        min-height: 204px;
+    }
+    #our_advantages .our_block {
+        height: 160px;
+    }
+
+    #our_advantages .our_block {
+        margin: 6px 0 0 0;
+        padding: 0 3px 0 3px;
+    }
+    #our_advantages .our_block:nth-child(1) a .inside_block h3 {
+        font-size: 4rem;
+    }
+    #our_advantages .our_block a .inside_block h3 {
+         font-size: 20px;
+     }
+    #our_advantages {
+         margin: 0;
+        padding: 0px 0 6px 0;
+    }
+    #text {
+        height: 166px;
+    }
+
+    #text .text {
+        width: 100%;
+    }
+    #soc_feed {
+        margin-top: -1px;
+    }
+    #map {
+        height: 252px;
+    }
+    #map .map .address {
+        width: 200px;
+        height: 200px;
+        top: 32px;
+        left: 52px;
+      }
+
+    footer .foot_block {
+        width: 20%;
+    }
+    footer .foot_block ul li {
+        margin: 5px 0;
+    }
+
+    footer .soc a {
+        margin: 0px 1px 0 0px;
+    }
+    footer .email_me {
+        bottom: -18px;
+    }
+    footer .email_me span {
+        margin: 0 8px 0 0;
+    }
+}
+
+/* Extra Small Devices, Phones */
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 320px) {
+
+  #about_circus_pt .block{
+    height: 150px;
+  }
+  #about_circus_pt .block .block_inside .block_btn a{
+    font-size: 18px;
+  }
+
+  /**/
+}
+
+
+
+
+@media only screen and (max-width: 480px) {
+
+    header {
+    background: url(../img/head_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: 44% 0%;
+    background-size: cover;
+    margin-top: 56px;
+    height: -webkit-calc(100vh - 46pt);
+    height: calc(100vh - 46pt);
+    }
+
+    header .first_ecran h1{
+    font-size: 36px;
+    /*margin: 227px 0 61px 0;*/
+    }
+
+    header .first_ecran .first_btn button {
+    font-size: 15px;
+    }
+
+    #slide_and_more .slide .carousel-inner .item img{
+    height: 210px;
+    }
+    #slide_and_more{
+    background: url(../img/block_2_bg_480.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    padding: 40px 0 0px 0;
+
+    }
+
+
+
+    #slide_and_more .more_about_circus{
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    padding: 20px 33px 8px 33px;
+
+    }
+    #slide_and_more .more_about_circus div{
+    margin: 15px 0 15px 0;
+    }
+
+    #slide_and_more .more_about_circus div button{
+    font-size: 12px;
+    font-family: openSans_semibold;
+    }
+
+    #events{
+    padding: 0;
+    }
+
+    #events .event{
+    min-height: 220px;
+    }
+
+    #events .event h2{
+    font-size: 34px;
+    padding: 79px 0 25px 0;
+    }
+    #events .event a{
+    font-size: 15px;
+    font-family: openSans_semibold;
+    padding: 7px 18px;
+    }
+
+    #our_advantages{
+    margin-top: 15px;
+    }
+
+    #our_advantages .our_block{
+        height: 107px;
+        margin: 10px 0 0 0;
+        padding: 0 5px 0 5px;
+    }
+    #our_advantages .our_block:nth-child(1) a .inside_block h3{
+    font-size: 3rem;
+    }
+
+    #our_advantages .our_block a .inside_block h3{
+    font-size: 18px;
+    }
+    #our_advantages .our_block:nth-child(3),#our_advantages .our_block:nth-child(5) {
+        padding-right: 5px;
+        padding-left: 0px;
+    }
+    #our_advantages .our_block:nth-child(2),#our_advantages .our_block:nth-child(4),#our_advantages .our_block:nth-child(6) {
+        padding-right: 0px;
+        padding-left: 5px;
+    }
+
+
+    .logo a img{
+    width: 72px;
+    }
+
+    nav {
+      height: 58px;
+    }
+
+
+    #text .text {
+    font-size: 13px;
+    }
+
+    #soc_feed .container-fluid p{
+        font-size: 16px;
+        margin-top: 44px;
+    }
+
+    #map {
+    height: 255px;
+    }
+
+    #map .map .address {
+    width: 120px;
+    height: 120px;
+    left: 35px;
+    top: 35px;
+    font-size: 1.1rem;
+    }
+
+    #map .map .address:before, #map .map .address:after {
+    display: none;
+    }
+
+    footer .foot_block{
+    width: 43%;
+    font-size: 11px;
+    height: 158px;
+    padding-left: 23px;
+    }
+    footer .title{
+    font-size: 14px;
+    }
+    footer .news_form
+    {
+    text-align: left;
+    height: 95px;
+    }
+
+    footer .soc a {
+     margin: 0 7px 0 0;
+    }
+    footer .soc a img {
+    width: 31px;
+    }
+
+
+    footer .email_me {
+        left: inherit;
+        bottom: 20px;
+    }
+    
+    footer .news_form{
+        padding: 8px 0 0 0;
+        margin: 0;
+    }
+    footer .news_form div
+    {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    footer .news_form input{
+    margin: 0 2px 0 0;
+    height: 30px;
+    padding-left: 15px;
+    float: left;
+    width: 42%;
+    }
+    footer .news_form button {
+    font-size: 12px;
+    float: right;
+    float: left;
+    margin-left: 15px;
+
+    }
+    footer .news_form span
+    {
+        display: block;
+        width: 79%;
+        text-align: left;
+        margin: 0 0 10px 0;
+    }
+
+    #another_page_header{
+    height: calc(100vh - 43pt);
+    margin-top: 43pt;
+    }
+    #another_page_header h1{
+    font-size: 36px;
+    }
+    #another_page_header p{
+    font-size: 16px;
+    }
+    #about_circus_pt .block{
+    height: 197px;
+    }
+
+    #about_circus_pt .block .block_inside .block_btn a{
+    font-size: 26px;
+    }
+    #about_circus_pt .block .block_inside .block_btn{
+    left: 21px;
+    bottom: 41px;
+    }
+
+    #about_circus_pt .text{
+    text-align: left;
+    font-size: 12px;
+    width: 100%;
+    }
+
+    #about_circus_pt .text p span{
+    display: block;
+    margin: 0 0 10px 0;
+    }
+
+    #news .news_block .thumbnail .caption .news_text{
+    font-size: 12px;
+    }
+
+    #news .news_block .thumbnail .caption h3{
+    font-family: roboto_medium;
+    font-size: 16px;
+    }
+    #news .news_block .thumbnail .caption .news_btn a{
+    padding: 6px 19px;
+    font-size: 14px;
+    }
+    #news .more_news_block .rotate_img{
+    height: 158px;
+    }
+    #news .more_news_block .rotate_img a{
+    bottom: 10px;
+    }
+
+    #single_new .right_sidebar .amazing_news{
+    overflow: hidden;
+    position: relative;
+    margin: 30px 0 0 0;
+    }
+
+    #single_new .right_sidebar .amazing_news ul{
+    height: 225px;
+    position: relative;
+    width: 2000px;
+    transition: all 500ms linear;
+
+    }
+    #single_new .right_sidebar .amazing_news ul .new{
+    display: inline-block;
+    height: 130px;
+    width: 223px;
+    vertical-align: top;
+    }
+    #single_new .right_sidebar .amazing_news .left_arrow, #single_new .right_sidebar .amazing_news .right_arrow {
+    position: absolute;
+    z-index: 10;
+    top: 106px;
+    font-size: 36px;
+    color: #fe4c57;
+    padding: 25px 0 25px 0;
+
+    }
+    #single_new .right_sidebar .amazing_news .right_arrow {
+    right: 15px;
+    }
+    #single_new .right_sidebar .amazing_news .left_arrow {
+    left: 15px;
+    }
+
+
+    #dictionary_page_header {
+    height: 268px;
+    background: url(../img/dictionary_bg_480.jpg);
+    margin-top: 58px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    }
+
+    #dictionary_page_header .text h1 {
+    margin: 136px 0 7px 0;
+
+    }
+    #dictionary_page_header .text p {
+      width: 90%;
+      font-size: 11px;
+    }
+
+    #dictionary .alphabet{
+    padding: 0 10px 0 10px;
+    }
+
+    #partners_page_header {
+      height: 268px;
+      background: url(../img/partners_bg_480.jpg);
+      margin-top: 58px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    #partners_page_header .text h1 {
+      margin: 136px 0 7px 0;
+      font-size: 36px;
+
+    }
+    #partners_page_header .text p {
+      width: 90%;
+      font-size: 11px;
+    }
+    #partners .row {
+    display: block;
+    margin: 30px 0 60px 0;
+    }
+    #partners .row .partner_logo {
+      margin: 0 0 30px 0;
+    }
+
+    #partners .row .partner_text {
+    word-break: normal;
+    }
+
+
+    #vacancies_page_header {
+    margin-top: 52px;
+    }
+
+    #vacancies_page_header .text p {
+    width: 100%;
+    }
+
+    #artists_page_header {
+    margin-top: 52px;
+    height: 268px;
+    background: url(../img/artista_bg_480.jpg);
+    background-size: cover;
+    background-position: 50% 6%;
+    background-repeat: no-repeat;
+    }
+
+    #artists_page_header .text h1 {
+    margin: 111px 0 7px 0;
+    font-size: 39px;
+    }
+
+    #artists .btn-group {
+    margin: 10px 0 0 0;
+    border: 0px solid #fe4c57;
+    }
+
+
+
+    #artists .btn-group .btn-primary {
+    border: 1px solid #fe4c57;
+    border-radius: 30px;
+    margin: 0 5px 10px 5px;
+    font-family: roboto_regular;
+    padding: 3px 4px;
+    font-size: 12px;
+    }
+
+    #artists .btn-group .btn:first-child, #artists .btn-group .btn:last-child{
+    border-radius: 30px;
+    }
+
+    .profs .row {
+    overflow: hidden;
+    }
+
+    #artists .profs .row .artist_prof {
+       height: 287px;
+       overflow: hidden;
+       margin: 20px 0 0 0;
+
+    }
+    #artists .profs .row .artist_prof .title{
+        width: 94.5%;
+    }
+
+    #artists .profs .row .artist_prof .single_artist{
+    display: inline-block;
+    width: 49%;
+    }
+    #artists .profs .row .artist_prof .single_artist a .artist_name {
+    font-size: 16px;
+    }
+
+    #artists .profs .row .artist_prof .single_artist a .artist_photo img {
+
+    /* max-height: 220px;*/
+    }
+
+        #ask_page_header {
+            height: 268px;
+            background: url(../img/dictionary_bg_480.jpg);
+            margin-top: 52px;
+        }
+        #ask_page_header .text h1 {
+            font-size: 36px;
+            margin: 135px 0 7px 0;
+        }
+        #ask_page_header .text p {
+            width: 85%;
+            font-size: 16px;
+        }
+
+}
+
+
+@media only screen and (max-width: 414px) {
+  /**/
+
+    #slide_and_more .more_about_circus div button{
+        font-family: openSans_semibold;
+        font-size: 14px;
+        padding: 8px 26px;
+    }
+
+    #slide_and_more .more_about_circus{
+          padding: 10px 27px;
+    }
+
+
+    #events .event{
+      min-height: 208px;
+    }
+    #events .event h2{
+      font-size: 22px;
+    }
+
+    #events .event a{
+      margin-bottom: 5px;
+      font-family: openSans_semibold;
+      padding: 6px 21px;
+    }
+
+
+    #our_advantages{
+    margin-top: 15px;
+    }
+
+    #our_advantages .our_block{
+    height: 97px;
+    margin: 10px 0 0 0;
+    padding: 0 5px 0 5px;
+    }
+    #our_advantages div:nth-child(1) h3{
+    font-size: 3rem;
+    }
+
+    #our_advantages div a h3{
+    font-size: 16px;
+    }
+
+    #our_advantages{
+      margin: 0 0 10px 0;
+    }
+
+    /*#our_advantages div{
+      min-height: 110px;
+      margin-bottom: 10px;
+    }*/
+    #our_advantages .our_block:nth-child(1) a .inside_block h3{
+      font-size: 2rem;
+    }
+    #our_advantages .our_block a .inside_block h3 {
+      font-size: 16px;
+    }
+    #text .text{
+      font-size: 11px;
+    }
+    #soc_feed .container-fluid p {
+        font-size: 14px;
+        margin-top: 28px;
+    }
+
+    footer .title{
+        font-size: 13px;
+        margin: 20px 0 10px 0;
+    }
+
+    footer .soc a img{
+        width: 24px;
+    }
+
+    footer .news_form{
+        margin-top: 5px;
+    }
+    footer .foot_block{
+        height: 118px;
+        width: 34%;
+        font-size: 9px;
+        padding-left: 11px;
+    }
+
+    footer .news_form button{
+        padding: 8px 14px;
+    }
+
+    footer .news_form input{
+        width: 53%;
+    }
+    footer .news_form span{
+    width: 92%;
+    }
+
+    footer .email_me {
+        left: inherit;
+        bottom: -3px;
+        font-size: 13px;
+    }
+
+
+    #dictionary_page_header {
+        height: 268px;
+        background: url(../img/dictionary_bg_480.jpg);
+        margin-top: 58px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+     #dictionary_page_header .text h1 {
+        margin: 136px 0 7px 0;
+
+     }
+     #dictionary_page_header .text p {
+        width: 90%;
+        font-size: 11px;
+     }
+
+     #dictionary .alphabet{
+      padding: 0 10px 0 10px;
+     }
+
+    #partners_page_header {
+      height: 268px;
+      background: url(../img/partners_bg_480.jpg);
+      margin-top: 58px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    #partners_page_header .text h1 {
+      margin: 127px 0 7px 0;
+      font-size: 33px;
+
+    }
+   #partners_page_header .text p {
+      width: 90%;
+      font-size: 11px;
+   }
+    #partners .row {
+    display: block;
+    margin: 30px 0 60px 0;
+    }
+    #partners .row .partner_logo {
+      margin: 0 0 30px 0;
+    }
+
+    #partners .row .partner_text {
+    word-break: break-all;
+    }
+    #vacancies_page_header {
+    margin-top: 52px;
+    background: url(../img/vacancies_bg_480.jpg);
+    background-size: cover;
+    background-position: 50% 6%;
+    background-repeat: no-repeat;
+    }
+
+    #artists_page_header {
+    margin-top: 58px;
+    height: 268px;
+    background: url(../img/artista_bg_480.jpg);
+    background-size: cover;
+    background-position: 50% 6%;
+    background-repeat: no-repeat;
+    }
+
+    #artists_page_header .text h1 {
+    margin: 111px 0 7px 0;
+    font-size: 39px;
+    }
+
+    #artists .btn-group {
+    margin: 10px 0 0 0;
+    border: 0px solid #fe4c57;
+    }
+    #artists .btn-group .btn-primary {
+    border: 1px solid #fe4c57;
+    border-radius: 30px;
+    margin: 0 5px 10px 5px;
+    font-family: roboto_regular;
+    padding: 3px 4px;
+    font-size: 11px;
+    }
+
+    #artists .btn-group .btn:first-child, #artists .btn-group .btn:last-child{
+    border-radius: 30px;
+    }
+
+    .profs .row {
+    overflow: hidden;
+    }
+
+    #artists .profs .row .artist_prof {
+       height: 205px;
+       overflow: hidden;
+       margin: 20px 0 0 0;
+    }
+    #artists .profs .row .artist_prof .title{
+        width: 93%;
+    }
+
+    #artists .profs .row .artist_prof .single_artist{
+    display: inline-block;
+    width: 49%;
+    }
+    #artists .profs .row .artist_prof .single_artist a .artist_name {
+    font-size: 12px;
+    }
+
+    #artists .profs .row .artist_prof .single_artist a .artist_photo img {
+
+    /* max-height: 220px;*/
+    }
+
+
+}
+
+
+
+@media only screen and (max-width: 375px) {
+    header .first_ecran h1 {
+        /*margin: 304px 0 61px 0;*/
+    }
+    #our_advantages .our_block:nth-child(1) a .inside_block h3 {
+        font-size: 2.5rem;
+    }
+    #our_advantages .our_block a .inside_block h3 {
+        font-size: 15px;
+    }
+    #soc_feed .container-fluid p {
+        font-size: 17px;
+    }
+    footer .news_form .form_block input {
+        width: 197px;
+    }
+    footer .title {
+        font-size: 12px;
+    }
+    footer .email_me {
+        left: inherit;
+        bottom: 1px;
+        font-size: 11px;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 320px) {
+    .circus_menu .social {
+        margin: 18px 0 0 0;
+    }
+    .circus_menu .social div a img {
+        width: 31px;
+    }
+    header .first_ecran h1 {
+        font-size: 33px;
+    }
+    #events .event {
+        min-height: 192px;
+    }
+    #events .event h2 {
+        padding: 53px 0 25px 0;
+    }
+    #our_advantages .our_block a .inside_block h3 {
+        font-size: 12.9px;
+    }
+    #soc_feed .container-fluid p {
+        margin-top: 40px;
+    }
+    footer .foot_block {
+        height: 118px;
+        width: 37%;
+        font-size: 9px;
+        padding-left: 0px;
+    }
+    footer .news_form .form_block button {
+        padding: 6px 10px;
+        font-size: 13px;
+    }
+    footer .news_form .form_block input {
+        margin: 0 0px 0 0px;
+        width: 192px;
+    }
+    header .first_ecran h1 {
+       /* margin: 227px 0 38px 0;*/
+    }
+    footer .news_form span {
+        width: 98%;
+    }
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 580px) {
+
+}
+
+
+@media only screen and (min-width: 580px) and (max-width: 700px) {
+
+
+}
+
+
+@media only screen and (min-width: 700px) and (max-width: 780px) {
+
+
+
+}
+
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) {
+  /**/
+
+
+}
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width: 480px) {
+  /**/
+}
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) {
+  /**/
+}
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {
+  /**/
+}
+
+/* Large Devices, Wide Screens */
+
+
+
+@media only screen and (min-width: 1500px) {
+    html {
+        font-size: 20px;
+    }
+
+    #slide_and_more .slide .carousel-inner .item img {
+         max-height: 320px;
+         width: 100%;
+     }
+    #our_advantages .our_block:nth-child(1) a .inside_block h3 {
+        font-size: 6em;
+    }
+
+    #our_advantages .our_block a .inside_block h3 {
+        font-size: 43px;
+    }
+    #our_advantages .our_block {
+        height: 425px;
+    }
+    #text {
+        height: 253px;
+    }
+    #text .text {
+        font-size: 1.5em;
+    }
+    #soc_feed .container-fluid p {
+        font-size: 2.5em;
+    }
+
+
+}
+
+
+
+@media only screen and (min-width: 1400px) {
+    #slide_and_more .slide .carousel-inner .item img {
+        max-height: 320px;
+
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+    #artists .btn-group .btn:last-child {
+        padding-right: 32px;
+    }
+}
+
+
+
+@media only screen and (min-width: 1900px) {
+    html {
+        font-size: 25px;
+    }
+}
+@media only screen and (min-width: 375px) {
+
+
+}
+
+@media only screen and (min-width: 414px) {
+
+}
+
+@media only screen and (min-width: 480px) {
+
+}

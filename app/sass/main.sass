@@ -1,0 +1,1850 @@
+*
+	padding: 0
+	margin: 0
+
+html
+	font-size: 16px
+	
+
+$btnBgColor: #fe4c57
+$arrowColor: #fe4c57
+$firmColor: #fe4c57
+$h3Color: #fe4c57
+$btnTextColor: #fff
+$btnShadowBg: #a73239
+$btnBrRadius: 10px
+$btnFontSize: 2.5em
+$textColor: #fff
+$historyColor: #fcc419
+
+$menuHeight: 74px
+
+=all_btn($btnBgColor,$btnTextColor, $btnBrRadius, $btnShadowBg, $btnFontSize)
+	border: none
+	background: $btnBgColor
+	color: $btnTextColor
+	border-radius: $btnBrRadius
+	outline: none
+	box-shadow: 0px 3px 0px 0px $btnShadowBg
+	font-size: $btnFontSize
+	text-align: center
+	font-family: openSans_bold
+
+	
+
+
+
+/* GENERAL MENU  */ 
+
+.circus_menu
+	height: $menuHeight
+	position: fixed
+	text-align: center
+	width: 100%
+	z-index: 20000
+	top: 0
+	background: #fff
+
+	.logo
+		position: absolute
+		top: 4px
+		a
+			img
+				max-width: 96px
+	.gen-nav
+		padding: 28px 0 0 0
+		list-style: none
+		width: 84%
+		margin: 0 auto
+		.menu_separator
+			vertical-align: text-bottom
+			color: $firmColor
+		li
+			display: inline-block
+			margin: 0 15px 0 15px
+			a
+				text-decoration: none
+				font-size: 1.125rem
+				color: #737070
+				text-transform: uppercase
+				line-height: 0
+				padding: 0
+				font-family: openSans_semibold
+				span
+					font-size: 0.8125rem
+					color: #737070
+					margin-left: 6px
+			.sub_menu
+				display: none
+				position: absolute
+				width: 200px
+				background: #fff
+				border: 2px solid $firmColor
+
+				li
+					display: block
+					padding: 15px 0 15px 0
+					border-bottom: 1px solid silver
+					width: 100%
+					margin: 0
+		.drop_down
+			position: relative
+			&:hover .sub_menu, &:focus .sub_menu
+				display: none
+				display: block
+	.lang
+		float: right
+		list-style: none
+		background: none
+		right: 20px
+		margin: 26px 0 0 0
+		width: 58px
+		cursor: pointer
+		
+		li
+			display: none
+		.active
+			display: block
+	.social
+		float: right
+		display: flex
+		justify-content: center
+		align-items: center
+		margin: 21px 0 0 0
+		div
+			a
+				margin: 0 3px 0 3px
+				img
+					width: 32px
+
+/* hamberger menu */
+
+.hamburger
+  float: right
+  display: none
+  position: absolute
+  right: 20px
+  top: 7px
+  .line
+    width: 38px
+    height: 5px
+    background-color: $firmColor
+    display: block
+    margin: 8px auto
+    border-radius: 10px
+    transition: all 0.3s ease-in-out
+  &:hover
+    cursor: pointer
+
+
+
+
+#ham_menu.is-active
+  transition: all 0.3s ease-in-out
+  transition-delay: 0.6s
+  transform: rotate(45deg)
+  .line
+    &:nth-child(2)
+      width: 0px
+    &:nth-child(1), &:nth-child(3)
+      transition-delay: 0.3s
+    &:nth-child(1)
+      transform: translateY(13px)
+    &:nth-child(3)
+      transform: translateY(-13px) rotate(90deg)
+
+
+//  END menu
+
+/* TIKETS ONLINE */
+.ticket_online
+	position: fixed
+	right: 5px
+	width: 154px
+	background: url(../img/fire_circle.png)
+	background-repeat: no-repeat
+	height: 163px
+	top: 85px
+	z-index: 20
+	display: flex
+	transition: all 300ms linear
+	&:hover
+		// transform: rotate(360deg)
+	&:hover button
+		// transform: rotate(-360deg)
+
+
+	button
+		+all_btn(transparent, #e51a27, $btnBrRadius, transparent, 0.9375em)
+		padding: 3px 21px
+		text-transform: uppercase
+		transition: all 300ms linear
+
+
+		
+	// &:after
+	// 	content: ''
+	// 	position: absolute
+	// 	width: 100%
+		
+	// 	height: 200px
+	// 	top: -58px
+	// 	background: url(../img/fire_circle.png)
+	// 	background-repeat: no-repeat
+		// background: url(../img/tickets_online_lion.png)
+		// box-shadow: inset 0px 2px 5px 0px rgba(0,0,0,0.35)
+
+
+/* // TIKETS ONLINE */
+header
+	position: relative
+	height:  100vh
+	// height: 100% /*for tablet*/
+	background: url(../img/head_bg.jpg)
+	background-size: cover
+	// background-position: 50% 0
+	background-repeat: no-repeat
+	padding: 86px 0 0 0
+	background-position: 50% 0%
+	.first_ecran
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
+		height: 100%
+		text-align: center
+		h1
+			color: $textColor
+			font-size: 3.125rem
+			display: block
+			width: 100%
+			text-transform: uppercase
+			font-family: ubuntu_bold
+			margin-top: 86px
+		.first_btn
+			width: 100%
+			margin-top: 62px
+			button
+				+all_btn($btnBgColor,$btnTextColor, $btnBrRadius, $btnShadowBg, 1.4375em)
+				padding: 9px 67px
+				text-transform: uppercase
+				
+
+
+#slide_and_more
+	position: relative
+	background: url(../img/block_2_bg_new.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: 50% 0%
+	padding: 118px 0 56px 0
+	margin-top: -1px;
+	.slide
+		box-shadow: 0px 0px 87px 2px rgba(255,255,255,0.15)
+		padding: 0 0 0 0
+		.carousel-inner
+			.item
+				img
+					max-height: 264px
+					width: 100%
+		.arrow_color
+			color: $arrowColor
+
+
+	.more_about_circus
+		padding: 0 0 0 100px
+		color: $textColor
+		font-size: 1rem
+		font-family: openSans_regular
+		line-height: 21px
+		div
+			
+			margin: 29px 0 0 0
+			button
+				+all_btn($btnBgColor,$btnTextColor, $btnBrRadius, $btnShadowBg, 1.1875em)
+				padding: 16px 20px
+				text-transform: uppercase
+				font-family: openSans_semibold
+
+
+#events
+	padding: 20px 0 0 0
+	.event
+		min-height: 370px
+		text-align: center
+		position: relative
+		&:after
+			content: ''
+			position: absolute
+			width: 100%
+			height: 100%
+			left: 0
+			z-index: -1
+			top: 0
+			background: rgba(0, 0, 0, 0.4)
+		img
+			position: absolute
+			height: 100%
+			width: 100%
+			left: 0
+			right: 0
+			z-index: -1
+
+		h2
+			width: 100%
+			text-align: center
+			color: $textColor
+			font-size: 3.125rem
+			z-index: 1
+			padding: 92px 0 44px 0
+			text-transform: uppercase
+			font-family: gothic_bold
+		a
+			+all_btn($btnBgColor,$btnTextColor, $btnBrRadius, $btnShadowBg, 1.3125em)
+			padding: 10px 20px
+			text-transform: uppercase
+			text-decoration: none
+			margin-bottom: 37px
+			z-index: 1
+
+#our_advantages
+	margin: 0 0 20px 0
+	.our_block
+		position: relative
+		height: 275px
+		margin: 20px 0 0 0
+		padding: 0 10px 0 10px
+		font-family: openSans_bold
+		&:nth-child(1)
+			padding-left: 0px
+		&:nth-child(3)
+			padding-right: 0px
+		&:nth-child(4)
+			padding-left: 0px
+		&:nth-child(6)
+			padding-right: 0px
+
+		a
+			position: relative
+			padding: 0 10px 0 10px
+			width: 100%
+			height: 100%
+			overflow: hidden
+			display: block
+
+			.inside_block
+				position: absolute
+				display: flex
+				align-items: center
+				width: 100%
+				height: 100%
+				left: 0
+				top: 0
+				h3
+					color: $textColor
+					text-align: center
+					font-size: 1.625rem
+					width: 100%
+					font-family: openSans_bold
+		&:nth-child(1)
+			a
+				.inside_block
+					background: #fdb818
+					h3
+						font-size: 3.125rem
+						margin: 0
+						padding: 0
+						font-family: roboto_bold
+		&:nth-child(2)
+			.inside_block
+				background-color: #ff9600
+				background: url(../img/giraffe.jpg)
+				background-repeat: no-repeat
+				background-size: cover
+				background-position: center center;
+		&:nth-child(3)
+			.inside_block
+				background-color: #2586e0
+				background: url(../img/lion.jpg)
+				background-repeat: no-repeat
+				background-size: cover
+				background-position: center center;
+		&:nth-child(4)
+			.inside_block
+				background-color: #33d823
+				background: url(../img/tiger.jpg)
+				background-repeat: no-repeat
+				background-size: cover
+				background-position: center center;
+		&:nth-child(5)
+			.inside_block
+				background-color: #36b3cd
+				background: url(../img/crocodile.jpg)
+				background-repeat: no-repeat
+				background-size: cover		
+				background-position: center center;		
+		&:nth-child(6)
+			.inside_block
+				background-color: #ea84c7
+				background: url(../img/parrot.jpg)
+				background-repeat: no-repeat
+				background-size: cover
+				background-position: center center;
+				
+			
+				
+
+#text
+	background: url(../img/insta_bg.jpg)
+	background-repeat: repeat-x
+	height: 235px
+	background-position: center center
+	background-size: cover
+	.text
+		width: 70%
+		margin: 0 auto
+		text-align: center
+		padding: 30px 0 0 0
+		color: $textColor
+		font-size: 1.125rem
+		font-family: openSans_regular
+
+		
+#soc_feed
+	margin-top: -1px;
+	background-color: #00041d
+	.container-fluid
+		.row
+			// height: 426px
+			.insta_center
+				height: 210px
+				margin-bottom: 20px
+				div
+					height: 210px
+					padding-left: 10px
+					padding-right: 10px
+					img
+						position: relative
+						width: 100%
+						height: 100%
+			.insta_block_one
+				padding: 10px
+				div
+					height: 446px
+					padding-left: 10px
+					padding-right: 10px
+					img
+						position: relative
+						width: 100%
+						height: 100%
+			.insta_block_twoo
+				padding: 10px
+				div
+					height: 213px
+					margin-bottom: 20px
+					padding-left: 10px
+					padding-right: 10px
+					img
+						position: relative
+						width: 100%
+						height: 100%
+		p
+			margin-top: 20px
+			color: #fdb818
+			font-size: 1.5625rem
+			text-align: center
+			font-family: openSans_semibold
+			a
+				color: $textColor
+				text-decoration: none
+
+#map
+	height: 500px
+	.map
+		background: url(../img/map.jpg)
+		background-size: cover
+		background-repeat: no-repeat
+		width: 100%
+		height: 100%
+		position: relative
+		z-index: -2
+		.address
+			position: relative
+			width: 250px
+			height: 250px
+			text-align: center
+			color: $textColor
+			font-size: 1.125rem
+			border-radius: 200%
+			background: #fe4c57
+			top: 135px
+			left: 100px
+			display: flex
+			justify-content: center
+			align-items: center
+			font-family: openSans_bold
+			box-shadow: 33px 33px 66px -10px rgba(0,0,0,0.35)
+			// &:after
+			// 	content: ''
+			// 	position: absolute
+			// 	width: 150px
+			// 	height: 200px
+			// 	background-image: url(../img/lion.png)
+			// 	background-repeat: no-repeat
+			// 	background-size: contain
+			// 	top: -125px
+			// 	z-index: -1
+			// 	left: -40px
+			// 	transform: rotate(-30deg)
+			// &:before
+			// 	content: ''
+			// 	position: absolute
+			// 	width: 150px
+			// 	height: 200px
+			// 	background-image: url(../img/man.png)
+			// 	background-repeat: no-repeat
+			// 	background-size: contain
+			// 	top: -125px
+			// 	z-index: -1
+			// 	transform: rotate(25deg)
+			// 	right: -15px
+/* BLOCK FOOTER */
+footer
+	background: #00041d
+	color: $textColor
+	display: flex
+	justify-content: space-around
+	align-items: center
+	flex-wrap: wrap
+	.foot_block
+		height: 165px
+		width: 17%
+		font-size: 0.8125rem
+		position: relative
+		font-family: openSans_semibold
+	.title
+		font-size: 1.1875rem
+		margin: 20px 0 20px 0
+		width: 100%
+	a
+		color: $textColor
+		text-decoration: none
+	ul
+		list-style: none
+	.soc
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		padding: 4px 0 0 0
+		a
+			margin: 0 7px 0 0
+			img
+				width: auto
+		span
+			margin: 0 12px 0 0
+		a
+			text-decoration: underline
+			font-size: inherit
+
+	.email_me
+		font-size: 1rem
+		// margin: 25px 0 0 0
+		position: absolute
+		bottom: 7px
+		left: 0px
+
+		span
+			margin: 0 10px 0 0
+
+	.news_form
+		border-top: 1px solid #6b6d7c
+		height: 85px
+		width: 100%
+		margin: 20px 0 0 0
+		padding-top: 27px
+		font-size: 1.0625rem
+		font-family: openSans_regular
+		.form_block
+			text-align: center
+			input
+				height: 35px
+				border-radius: 20px
+				padding-left: 17px
+				border: none
+				color: #0f0f0f
+				outline: none
+				width: 242px
+				margin: 0 15px 0 10px
+			button
+				+all_btn($btnBgColor,$btnTextColor, $btnBrRadius, $btnShadowBg, 0.875em)
+				text-transform: uppercase
+				padding: 7px 13px
+				font-family: openSans_regular
+
+/* END FOOTER */
+
+/* ANOTHER PAGE HEADER*/
+
+#another_page_header
+	height: 395px
+	margin-top: 86px
+	position: relative
+	background: url(../img/about_header_bg.jpg)
+	background-size: 100%
+	background-position: 100% 25%
+	background-repeat: no-repeat
+	.text
+		h1
+			color: $textColor
+			font-size: 3.37rem
+			margin: 191px 0 7px 0
+			font-family: openSans_bold
+			font-size: 3rem
+		p
+			color: $textColor
+			font-family: openSans_semibold
+			font-size: 1.0625rem
+			width: 59%
+
+
+/* END ANOTHER PAGE HEADER*/
+
+
+/* BLOCK ABOUT CIRCUS */
+
+#about_circus_pt
+	margin: 48px 0 76px 0
+	.text
+		text-align: center
+		width: 80%
+		margin: 0 auto
+		padding: 0 0 20px 0
+		color: #636363
+		font-family: openSans_regular
+		font-size: 1.1875rem
+	.block
+		position: relative
+		height: 290px
+		margin: 30px 0 0 0
+		padding: 0 10px 0 10px
+		.block_inside
+			position: relative
+			padding: 0 10px 0 10px
+			width: 100%
+			height: 100%
+			overflow: hidden
+			&:hover .overlay
+				opacity: 0
+			img
+				position: absolute
+				height: 100%
+				width: 100%
+				left: 0
+				top: 0
+				z-index: -3
+				box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.4)
+			.overlay
+				position: absolute
+				height: 100%
+				width: 100%
+				left: 0
+				top: 0
+				z-index: -2
+				background: #000
+				opacity: 0.5
+				transition: all 400ms linear
+			.block_btn
+				position: absolute
+				left: 40px
+				bottom: 78px
+				a
+					color: $textColor
+					text-decoration: none
+					font-size: 1.875rem
+					z-index: 2
+					font-family: openSans_semibold
+					&:after, &:before
+						content: ''
+						position: absolute
+					&:before
+						width: 100%
+						height: 2px
+						background: #fe4c57
+						bottom: -10px
+						left: 0
+		
+						// &:after
+						// transition: all 200ms linear 300ms
+						// width: 100%
+						// height: 140%
+						// background: #fe4c57
+						// bottom: -10px
+						// left: 0
+						// z-index: -1
+
+
+				.under_line
+					width: 300px
+					height: 140%
+					background: #fe4c57
+					position: absolute
+					z-index: -1
+					bottom: -10px
+					left: -500px
+					transition: all 200ms linear
+
+
+/* END  BLOCK ABOUT CIRCUS */
+			
+
+/* AFFICHE */
+#affiche
+	margin: 38px 0 78px 0
+	.block
+		.thumbnail
+			img
+				box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.4)
+			.caption
+				h3
+					font-family: openSans_bold
+					font-size: 2.25rem
+					text-align: center
+					color: $h3Color
+				.event_text
+					font-family: openSans_regular
+					font-size: 1.125rem
+					color: #353535
+					word-break: break-all
+					min-height: 125px
+					margin-top: 25px
+				.date
+					text-align: center
+					font-family: openSans_bold
+					font-size: 1.875rem
+					color: #505050
+					margin: 25px 0 25px 0
+				.event_btn
+					text-align: center
+					a
+						&:nth-child(1)
+							+all_btn(transparent,#fe4c57, $btnBrRadius, transparent, 1.125em)
+							font-family: openSans_regular
+							border: 2px solid #fe4c57
+							text-transform: uppercase
+							padding: 10px 36px
+							margin-right: 10px
+						&:nth-child(2)
+							+all_btn($btnBgColor,$btnTextColor, $btnBrRadius, $btnShadowBg, 1.125em)
+							font-family: openSans_regular
+							text-transform: uppercase
+							padding: 10px 20px
+							margin-left: 10px
+
+
+
+/* END  AFFICHE */
+
+
+
+/* NEWS */
+#news
+	margin: 38px 0 78px 0
+	.news_block
+		.thumbnail
+			margin-bottom: 35px
+			img
+				box-shadow: 5px 4px 12px 0px rgba(0, 0, 0, 0.3)
+			.caption
+				h3
+					font-family: roboto_bold
+					font-size: 1.5rem
+					color: $h3Color
+				.news_text
+					font-family: openSans_regular
+					font-size: 1rem
+					color: #353535
+					 	
+					line-height: 19px
+				.news_btn
+					margin: 25px 0 0 0
+					a
+						+all_btn($btnBgColor,#fdfdfd, $btnBrRadius, $btnShadowBg, 1.128em)
+						font-family: openSans_regular
+						text-transform: uppercase
+						padding: 10px 37px
+	.more_news_block
+		.rotate_img
+			//box-shadow: 7px 7px 12px 0px rgba(0,0,0,0.5)
+			height: 315px
+			position: relative
+			cursor: pointer
+			display: flex
+			justify-content: center
+			background: url(../img/rotate.png)
+			background-repeat: no-repeat
+			background-position: center center
+			a
+				text-decoration: none
+				font-family: roboto_bold
+				font-size: 1.375rem
+				color: #fe4c57
+				position: absolute
+				bottom: 93px
+/* END NEWS */
+
+
+/* SINGLE_NEWS */
+#single_new
+	margin: 56px 0 63px 0
+	img
+		width: 100%
+	.text
+		margin: 30px 0
+		font-family: openSans_regular
+		font-size: 1rem
+		color: #5c5c5c
+	.soc_block
+		box-shadow: 4px 4px 12px 3px rgba(0, 0, 0, 0.15)
+		width: 260px
+		display: flex
+		align-items: center
+		font-family: openSans_semibold
+		color: #fe4c57
+		padding: 11px 13px
+
+		.soc_icon
+			display: flex
+			margin: 0 0 0 14px
+			a
+				img
+					width: 27px
+					margin: 0 3px
+	.right_sidebar
+		.amazing_news
+			// box-shadow: 7px 7px 12px 0px rgba(0,0,0,0.15)
+			box-shadow: 4px 4px 12px 3px rgba(0, 0, 0, 0.15)
+			.title
+				text-align: center
+				font-family: roboto_medium
+				font-size: 1.375rem
+				color: #fe4c57
+				padding: 32px 0 16px 0
+			ul
+				list-style: none
+				overflow: visible
+				height: auto
+				.new
+					padding: 16px 0 16px 0
+					text-align: center
+					height: auto
+					display: block
+					a
+						text-decoration: none
+						img
+							width: auto
+							height: auto
+						.title_new
+							text-align: center
+							font-family: openSans_semibold
+							font-size: 0.9375rem
+							color: #5c5c5c
+							padding: 13px 0 0 0
+							width: 70%
+							margin: 0 auto
+
+		.subscribe
+			text-align: center
+			box-shadow: 4px 4px 12px 3px rgba(0, 0, 0, 0.15)
+			margin: 22px 0 0 0
+			.title
+				text-align: center
+				font-family: roboto_medium
+				font-size: 1.375rem
+				color: #fe4c57
+				padding: 32px 0 16px 0
+			form
+				input
+					border: none
+					border-bottom: 1px solid #787676
+				button
+					+all_btn($btnBgColor,#fefefe, $btnBrRadius, $btnShadowBg, 1.125em)
+					margin: 30px 0 35px 0
+					font-family: openSans_regular
+					padding: 6px 24px
+					text-transform: uppercase
+
+/* END SINGLE_NEWS */
+
+
+/* DICTIONARY */
+
+#dictionary_page_header
+	height: 395px
+	margin-top: 86px
+	position: relative
+	background: url(../img/dictionary_bg.jpg)
+	background-size: 100%
+	background-position: 100% 25%
+	background-repeat: no-repeat
+	.text
+		h1
+			color: $textColor
+			font-size: 3.75rem
+			margin: 191px 0 7px 0
+			font-family: openSans_bold
+			font-size: 3rem
+		p
+			color: $textColor
+			font-family: openSans_semibold
+			font-size: 1.0625rem
+			width: 59%
+
+#dictionary
+	.alphabet
+		text-align: center
+		margin: 15px 0 15px 0
+		a
+			margin: 0 4px
+			font-family: openSans_regular
+			font-size: 1.125rem
+			color: $firmColor
+		.active
+			text-decoration: underline
+	#accordion
+		.panel-default
+			.panel-heading
+				.panel-title
+					.heading_btn
+						color: #7d7d7d
+						font-family: openSans_semibold
+						font-size: 1.375rem
+						text-decoration: none
+
+.accordion_a_color
+	color: $firmColor!important
+
+.accrodion_border_color
+	border-color: $firmColor
+/* END DICTIONARY */
+
+
+/*  PARTNERS */
+
+#partners_page_header
+	height: 395px
+	margin-top: 86px
+	position: relative
+	background: url(../img/partners_bg.jpg)
+	background-size: cover
+	background-position: center center
+	background-repeat: no-repeat
+	.text
+		h1
+			color: $textColor
+			font-size: 3.75rem
+			margin: 191px 0 7px 0
+			font-family: openSans_bold
+		p
+			color: $textColor
+			font-family: openSans_semibold
+			font-size: 1.0625rem
+			width: 59%
+
+
+//partner_logo_concert_ua.png
+#partners
+	.row
+		margin: 70px 0
+		display: flex
+		.partner_logo
+			align-self: center
+			margin: 0 0 0 0
+			text-align: center
+			a
+				img
+					width: 80%
+		.partner_text
+			font-family: openSans_regular
+			color: #636363
+			word-break: normal
+
+
+/* END PARTNERS */
+
+
+/* Vacancies */
+#vacancies_page_header
+	height: 395px
+	margin-top: 86px
+	position: relative
+	background: url(../img/vacancies_bg.jpg)
+	background-size: cover
+	background-position: 50% 6%
+	background-repeat: no-repeat
+	.text
+		h1
+			color: $textColor
+			font-size: 3.75rem
+			margin: 191px 0 7px 0
+			font-family: openSans_bold
+		p
+			color: $textColor
+			font-family: openSans_semibold
+			font-size: 1.0625rem
+			width: 59%
+
+#vacancies
+	.panel-group
+		.panel-default
+			border: none
+			.panel-heading
+				.panel-title
+					.glyphicon
+						font-size: 0.625rem
+						color: #fe4c57
+					.vac_heading_btn
+						font-family: openSans_semibold
+						text-decoration: none
+						color: $firmColor
+						font-size: 1.25rem
+			.panel-collapse
+				.panel-body
+					color: #636363
+					font-family: openSans_regular
+					.title
+						font-family: openSans_semibold
+					button
+						+all_btn($btnBgColor,#fefefe, $btnBrRadius, $btnShadowBg, 1em)
+						padding: 10px 20px
+						font-family: openSans_semibold
+						padding: 5px 40px
+						margin: 25px 0 25px 0
+
+/* END Vacancies */
+
+
+
+/* ARTISTS */
+
+#artists_page_header
+	height: 395px
+	margin-top: $menuHeight
+	position: relative
+	background: url(../img/artista_bg.jpg)
+	background-size: cover
+	background-position: 50% 6%
+	background-repeat: no-repeat
+	z-index: 1
+	&:after
+		content: ''
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		z-index: -1
+		background: rgba(0, 0, 0, 0.35);
+	.text
+		h1
+			color: $textColor
+			font-size: 3.75rem
+			margin: 191px 0 7px 0
+			font-family: openSans_bold
+			
+		p
+			color: $textColor
+			font-family: openSans_semibold
+			font-size: 1.0625rem
+			width: 59%
+
+
+#artists
+	.btn-group
+		margin: 30px 0 0 0
+		border: 1px solid $firmColor
+		border-radius: 30px
+		display: flex
+		justify-content: space-between
+
+		.btn
+			border-left: none
+			border-right: none
+			//padding: 6px 13.5px
+			&:first-child
+				border-radius: 27px 0 0 27px
+				//border-left: 1px solid
+			&:last-child
+				border-radius: 0 27px 27px 0
+				//border-right: 1px solid
+				.active
+					background: black
+
+		.btn-primary
+			background: transparent
+			color: $firmColor
+			font-family: roboto_medium
+			border: none
+			width: 100%
+			overflow: hidden
+		.active
+			color: #fff
+			background: $firmColor
+			box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0)
+			&:after
+				content: ''
+				position: absolute
+				width: 100%
+				height: 100%
+				top: 0
+				right: -10px
+				z-index: -1
+				background: $firmColor
+
+	.profs
+		margin: 0 0 40px 0
+		.row
+			.artist_prof
+				margin: 40px 0 0 0
+				overflow: hidden
+				animation: all 400ms linear
+				// display: flex
+				// justify-content: space-between
+				// flex-wrap: wrap
+				.arr_left, .arr_right
+					position: absolute
+					height: 100%
+					color: $firmColor
+					font-size: 1.5625rem
+					padding-top: 20%
+					z-index: 1
+				.arr_left
+					left: 0
+				.arr_right
+					right: 0
+					
+				.title
+					color: $firmColor
+					font-size: 1.25rem
+					border-bottom: 1px solid $firmColor
+					font-family: openSans_bold
+					margin: 0 0 0 10px
+					
+				.carousel-wrapp
+					margin-left: 0
+					animation: all 400ms linear
+					.single_artist
+						margin: 15px 0 0 0
+						padding: 0
+						width: 24.7%
+						display: inline-block
+						a
+							text-decoration: none
+							.artist_photo
+								padding: 0 10px 0 10px
+								img
+									width: 92%
+									display: block
+									margin: 0 auto
+							.artist_name
+								text-align: center
+								margin: 10px 0 0 0
+								text-align: center
+								color: #666666
+								font-family: openSans_semibold
+								font-size: 1.125rem
+							&:hover .artist_name
+								color: $firmColor
+								text-decoration: underline
+
+
+/* SINGLE_ARTIST */
+
+#single_artist_page_header
+	height: auto
+	max-height: 492px
+	margin-top: 86px
+	position: relative
+	overflow: hidden
+
+	.photo_artist
+		// z-index: -3
+		position: relative
+		.this_photo
+			width: 100%
+			z-index: -2
+		&:after
+			content: ''
+			position: absolute
+			width: 100%
+			height: 100%
+			left: 0
+			// z-index: -1
+			top: 0
+			background: rgba(0, 0, 0, 0.3)
+	.artist_name
+		position: absolute
+		left: 0
+		top: 0
+		z-index: 1
+
+	.text
+		z-index: 3
+		h1
+			color: $textColor
+			font-size: 3.75rem
+			margin: 290px 0 7px 0
+			font-family: openSans_bold
+			font-size: 3.375rem
+			z-index: 3
+		p
+			color: $textColor
+			font-family: openSans_semibold
+			font-size: 1.0625rem
+			width: 59%
+#single_artist
+	padding: 40px 0 0 0
+	.about_artist
+		.photo
+			img
+				box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.4)
+				width: 100%
+				max-width: 400px
+		.text
+			font-family: openSans_regular
+			font-size: 0.875rem
+			line-height: 19px
+	.artist_photos
+		padding: 80px 0 50px 0
+		.block
+			img
+				box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.4)
+				width: 100%
+				max-width: 400px
+
+/* END SINGLE_ARTIST */
+
+
+/* CONTACTS */
+#contacts_page_header
+	height: 395px
+	margin-top: 86px
+	position: relative
+	background: url(../img/dictionary_bg.jpg)
+	background-size: cover
+	background-position: 50% 6%
+	background-repeat: no-repeat
+	.text
+		h1
+			color: $textColor
+			font-size: 3.75rem
+			margin: 191px 0 7px 0
+			font-family: openSans_bold
+			font-size: 48px
+			width: 50%
+		p
+			color: $textColor
+			font-family: openSans_semibold
+			font-size: 1.0625rem
+			width: 10%
+
+#contacts
+	.contacts
+		.block
+			font-family: openSans_regular
+			font-size: 0.875rem
+			color: #686868
+			word-wrap: break-word
+			p
+				color: $firmColor
+				font-family: roboto_medium
+				margin: 20px 0 10px 0
+				font-size: 1.125rem
+
+	.title
+		text-align: center
+		margin-top: 20px
+		background: $firmColor
+		color: #fff
+		font-family: openSans_semibold
+		font-size: 1.5rem
+
+		padding: 5px 0 5px 0
+	.direction
+		.title
+			margin-top: 60px
+			margin-bottom: 30px
+
+		.direction_carousel
+			div
+				a
+					text-decoration: none
+					outline: none
+			.dir_name
+				font-family: openSans_bold
+				color: $firmColor
+				text-align: center
+				font-size: 1.125rem
+			.dir_position
+				text-align: center
+				color: #3d3d3d
+			img
+				width: 100%
+			button
+				background: none
+				border: none
+			.slick-prev, .slick-next
+				line-height: 0
+				position: absolute
+				top: 32%
+				display: block
+				width: 20px
+				height: 20px
+				padding: 0
+				-webkit-transform: translate(0, -50%)
+				-ms-transform: translate(0, -50%)
+				transform: translate(0, -50%)
+				cursor: pointer
+				color: transparent
+				border: none
+				outline: none
+				background: transparent
+				color: $firmColor
+				font-size: 2.5rem
+			.slick-prev
+				left: -35px
+			.slick-next
+				right: -15px
+	.call_back_form
+		margin: 50px 0 40px 0
+		.title
+			color: #7a7a7a
+			font-size: 1.375rem
+			background: transparent
+		form
+			input
+				border: 1px solid #bfbfbf
+				border-radius: 30px
+				padding: 18px 0 18px 13px
+				font-family: roboto_medium
+				font-size: 0.75rem
+				margin: 10px 0 25px 0
+			textarea
+				border-radius: 15px
+				min-height: 100px
+				margin: 0 0 30px 0
+			button
+				+all_btn($btnBgColor,#fefefe, $btnBrRadius, $btnShadowBg, 1em)
+				padding: 5px 30px
+				font-family: openSans_regular
+				text-transform: uppercase
+				
+				
+
+/* END CONTACTS */
+
+
+
+/* ask_and_q */
+#ask_page_header
+	height: 600px
+	margin-top: 86px
+	position: relative
+	background: url(../img/dictionary_bg.jpg)
+	background-size: cover
+	background-position: 42%
+	background-repeat: no-repeat
+	.text
+		h1
+			color: $textColor
+			font-size: 3.75rem
+			margin: 355px 0 7px 0
+			font-family: openSans_bold
+			font-size: 3.75rem
+		p
+			color: $textColor
+			font-family: openSans_semibold
+			font-size: 1.5rem
+			width: 100%
+#ask_and_q
+	padding: 30px 0
+	.panel-group
+		.panel-default
+			border: none
+			.panel-heading
+				.panel-title
+					.glyphicon
+						font-size: 0.625rem
+						color: #fe4c57
+					.vac_heading_btn
+						font-family: openSans_semibold
+						text-decoration: none
+						color: $firmColor
+						font-size: 1.25rem
+			.panel-collapse
+				.panel-body
+					color: #636363
+					font-family: openSans_regular
+					.title
+						font-family: openSans_semibold
+					button
+						+all_btn($btnBgColor,#fefefe, $btnBrRadius, $btnShadowBg, 1em)
+						padding: 10px 20px
+						font-family: openSans_semibold
+						padding: 5px 40px
+						margin: 25px 0 25px 0
+
+/* END ask_and_q */
+
+
+/* gallery*/
+#gallery_page_header
+	height: 600px
+	margin-top: 86px
+	position: relative
+	background: url(../img/gallery_bg_1280.jpg)
+	background-size: cover
+	background-position: 42%
+	background-repeat: no-repeat
+	.text
+		h1
+			color: $textColor
+			font-size: 3.75rem
+			margin: 330px 0 25px 0
+			font-family: openSans_bold
+			font-size: 3.75rem
+		p
+			color: $textColor
+			font-family: openSans_semibold
+			font-size: 1.5rem
+			width: 100%
+#gallery
+	.gallery_switch
+		padding: 35px 0 45px 0
+		.block
+			text-align: center
+			.btn-group
+				.btn
+					border-radius: 30px
+					font-family: openSans_semibold
+					font-size: 1.25rem
+					background: transparent
+					color: $firmColor
+					border-color: $firmColor
+					&:first-child
+						border-radius: 30px 0 0 30px
+					&:last-child
+						border-radius: 0 30px 30px 0
+				.active
+					background-color: $firmColor
+					color: #fff
+
+/* END gallery */
+
+/* HISTORY*/
+#history_page_header
+	height: 600px
+	margin-top: 86px
+	position: relative
+	background: url(../img/history_header_bg.jpg)
+	background-size: cover
+	background-position: 42%
+	background-repeat: no-repeat
+	.text
+		h1
+			color: $textColor
+			font-size: 3.75rem
+			margin: 330px 0 25px 0
+			font-family: openSans_bold
+			font-size: 3.75rem
+		p
+			color: $textColor
+			font-family: openSans_semibold
+			font-size: 1.5rem
+			width: 100%
+#history
+	height: 7770px
+	padding: 25px 0 0 0
+	background: url("../img/history_section_bg.png")
+	background-repeat: repeat-y
+	background-attachment: fixed
+	animation: all 2000 linear
+	.hor_line_left_block, .hor_line_right_block
+		position: absolute
+		height: 8px
+		width: 31px
+	.hor_line_left_block
+		right: 0
+		.line
+			position: absolute
+			height: 2px
+			right: 0
+			background: $historyColor
+			width: 0%
+			top: 50%
+			margin-top: -1px
+		.dot
+			position: absolute
+			width: 0px
+			height: 0px
+			background: $historyColor
+			border-radius: 200%
+			left: 0
+			top: 50%
+			margin-top: -1px
+	.hor_line_right_block
+		left: 0
+		.line
+			position: absolute
+			height: 2px
+			left: 0
+			background: $historyColor
+			width: 0%
+			top: 50%
+			margin-top: -1px
+		.dot
+			position: absolute
+			width: 0px
+			height: 0px
+			background: $historyColor
+			border-radius: 200%
+			right: 0
+			top: 50%
+			margin-top: -1px
+	.large_text_block
+		text-align: center
+		width: 80%
+		position: relative
+		margin: 0 auto
+		padding: 15px 30px
+		color: #181818
+		font-family: openSans_regular
+		font-size: 1.0625rem
+		line-height: 22px
+		.block_left, .block_right
+			position: absolute
+			width: 50%
+			height: 100%
+			top: 0
+		.block_left
+			left: 0
+			animation: all 2000ms linear
+			.top, .left, .bottom
+				background: $historyColor
+				position: absolute
+				animation: all 2000ms linear
+			.top
+				right: 0
+				top: 0
+				height: 2px
+				width: 0%
+			.left
+				top: 0
+				left: 0
+				width: 2px
+				height: 0%
+			.bottom
+				left: 0
+				height: 2px
+				width: 0%
+				bottom: 0
+
+		.block_right
+			right: 0
+			animation: all 2000ms linear
+			.top, .left, .bottom
+				background: $historyColor
+				position: absolute
+				animation: all 2000ms linear
+			.top
+				left: 0
+				top: 0
+				height: 2px
+				width: 0%
+			.left
+				top: 0
+				right: 0
+				width: 2px
+				height: 0%
+			.bottom
+				right: 0
+				height: 2px
+				width: 0%
+				bottom: 0
+	.wert_line_80
+		height: 80px
+		width: 8px
+		margin: 0 auto
+		position: relative
+		.line
+			position: absolute
+			height: 0%
+			background: $historyColor
+			width: 2px
+			top: 0
+			left: 50%
+			margin-left: -1px
+			animation: all 2000ms linear
+		.dot
+			position: absolute
+			width: 0px
+			height: 0px
+			padding: 0px
+			background: $historyColor
+			border-radius: 200%
+			bottom: 0
+			left: 50%
+			margin-left: -1px
+	.history_pic_1
+		position: relative
+		width: 100%
+		img
+			width: 100%
+			opacity: 0
+			animation: all 2000 linear
+
+	.history_long_vert_block
+		position: relative
+		padding: 0 0 18px 0
+		.vert_line_long
+			height: 100%
+			width: 8px
+			left: 50%
+			margin-left: -4px
+			position: absolute
+			.line
+				position: absolute
+				height: 0
+				background: $historyColor
+				width: 2px
+				top: 0
+				left: 50%
+				margin-left: -1px
+			.dot_bottom, .dot_top
+				position: absolute
+				width: 0px
+				height: 0px
+				padding: 0px
+				background: $historyColor
+				border-radius: 200%
+				left: 50%
+				margin-left: -1px
+			.dot_top
+				top: 0px
+			.dot_bottom
+				bottom: 0
+		.line_1
+			.text_block_left
+				text-align: right
+				color: #181818
+				font-size: 1.0625rem
+				font-family: openSans_regular
+				padding: 60px 50px 0 20px
+				.hor_line_left_block
+					top: 100px
+				p
+					color: $historyColor
+					font-size: 3.75rem
+					font-family: openSans_semibold
+					position: relative
+			.img_block_right
+				img
+					padding-left: 40px
+					width: 109%
+					opacity: 0.5
+		.line_2
+			margin-top: 50px
+			.text_block_right
+				text-align: left
+				color: #181818
+				font-size: 1.0625rem
+				font-family: openSans_regular
+				padding: 13px 20px 0 50px
+				.hor_line_right_block
+					top: 58px
+				p
+					color: $historyColor
+					font-size: 3.75rem
+					font-family: openSans_semibold
+					position: relative
+			.img_block_left
+				img
+					padding-right: 80px
+					width: 109%
+		.line_3
+			.text_block_left
+				text-align: right
+				color: #181818
+				font-size: 1.0625rem
+				font-family: openSans_regular
+				padding: 25px 50px 0 20px
+				.hor_line_left_block
+					top: 65px
+				p
+					color: $historyColor
+					font-size: 3.75rem
+					font-family: openSans_semibold
+					position: relative
+			.img_block_right
+				img
+					padding-top: 20px
+					width: 64%
+					display: block
+					opacity: 1
+					margin: 0 auto
+
+		.line_4
+			padding-top: 50px
+			.text_block_right
+				text-align: left
+				color: #181818
+				font-size: 1.0625rem
+				font-family: openSans_regular
+				padding: 13px 20px 0 50px
+				.hor_line_right_block
+					top: 58px
+				p
+					color: $historyColor
+					font-size: 3.75rem
+					font-family: openSans_semibold
+					position: relative
+			.img_block_left
+				img
+					padding-left: 80px
+					width: 93%
+		.line_5
+			.text_block_left
+				text-align: right
+				color: #181818
+				font-size: 1.0625rem
+				font-family: openSans_regular
+				padding: 25px 50px 0 20px
+				.hor_line_left_block
+					top: 65px
+				p
+					color: $historyColor
+					font-size: 3.75rem
+					font-family: openSans_semibold
+					position: relative
+			.img_block_right
+				img
+					width: 71%
+					display: block
+					margin: 0 auto
+		.history_bg_1941-1960
+			background-image: url(../img/history_bg_1941-1960.png)
+			background-repeat: no-repeat
+			background-size: 100% 91%
+			background-position: center top
+			margin-bottom: 35px
+			.line_6
+				.text_block_right
+					text-align: left
+					color: #181818
+					font-size: 1.0625rem
+					font-family: openSans_regular
+					padding: 13px 20px 0 50px
+				.img_block_left
+					position: relative
+					.pic_7, .pic_8
+						position: absolute
+					.pic_8
+						width: 60%
+						top: -64px
+						left: 91px
+					.pic_7
+						width: 34%
+						top: -6px
+						max-height: 266px
+						right: 94px
+						box-shadow: 4px 6px 9px rgba(0, 0, 0, 0.35)
+			.line_7
+				.text_block_left
+					text-align: right
+					color: #181818
+					font-size: 1.0625rem
+					font-family: openSans_regular
+					padding: 156px 50px 0 20px
+					.hor_line_left_block
+						top: 197px
+					p
+						color: $historyColor
+						font-size: 3.75rem
+						font-family: openSans_semibold
+						position: relative
+				.img_block_right
+					img
+						margin: 80px 0 0 40px
+						width: 83%
+						box-shadow: 4px 6px 9px rgba(0, 0, 0, 0.35)
+			.line_8
+				padding-top: 50px
+				.text_block_right
+					text-align: left
+					color: #181818
+					font-size: 1.0625rem
+					font-family: openSans_regular
+					padding: 13px 20px 0 50px
+					.hor_line_right_block
+						top: 58px
+					p
+						color: $historyColor
+						font-size: 3.75rem
+						font-family: openSans_semibold
+						position: relative
+				.img_block_left
+					img
+						width: 92%
+						margin-left: 10px
+						box-shadow: 4px 6px 9px rgba(0, 0, 0, 0.35)
+	.large_text_block_from_1998
+		.block_left
+			.bottom_line
+				position: absolute
+				right: 0
+				bottom: 0
+				height: 2px
+				background: $historyColor
+				width: 0%
+
+		.block_right
+			.bottom_line
+				position: absolute
+				left: 0
+				bottom: 0
+				height: 2px
+				background: $historyColor
+				width: 0%
+		p
+			color: $historyColor
+			font-size: 3.75rem
+			font-family: openSans_semibold
+			position: relative
+			padding: 15px 0 35px 0
+	.from_1998
+		.hor_line_right_block, hor_line_left_block
+			width: 19px
+		.line_9
+			padding-top: 60px
+			.text_block_right
+				text-align: left
+				color: #181818
+				font-size: 1.0625rem
+				font-family: openSans_regular
+				padding: 13px 20px 0 50px
+				.hor_line_right_block
+					top: 45px
+				.item-2
+					top: 155px
+				p
+					color: $historyColor
+					font-size: 2.875rem
+					font-family: openSans_semibold
+					position: relative
+			.img_block_left
+				img
+					width: 77%
+					margin-left: 111px
+					box-shadow: 4px 6px 9px rgba(0, 0, 0, 0.35)
+
+
+/* END  HISTORY*/

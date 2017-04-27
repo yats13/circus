@@ -1,0 +1,128 @@
+@font-face{
+
+font-family: 'ubuntu_bold';
+
+src: url('Ubuntu-Bold.ttf');
+
+src: url('Ubuntu-Bold.ttf') format('truetype'),
+
+url('Ubuntu-Bold.ttf') format('truetype');
+
+font-weight: bold;
+
+font-style: normal;
+
+}
+
+@font-face{
+
+font-family: 'openSans_semibold';
+
+src: url('OpenSans-Semibold.ttf');
+
+src: url('OpenSans-Semibold.ttf') format('truetype'),
+
+url('OpenSans-Semibold.ttf') format('truetype');
+
+font-weight: bold;
+
+font-style: normal;
+
+}
+
+
+@font-face{
+
+font-family: 'openSans_bold';
+
+src: url('OpenSans-Bold.ttf');
+
+src: url('OpenSans-Bold.ttf') format('truetype'),
+
+url('OpenSans-Bold.ttf') format('truetype');
+
+font-weight: bold;
+
+font-style: normal;
+
+}
+
+@font-face{
+
+font-family: 'openSans_regular';
+
+src: url('OpenSans-Regular.ttf');
+
+src: url('OpenSans-Regular.ttf') format('truetype'),
+
+url('OpenSans-Regular.ttf') format('truetype');
+
+font-weight: normal;
+
+font-style: normal;
+
+}
+
+@font-face{
+
+font-family: 'gothic_bold';
+
+src: url('GOTHICB.TTF');
+
+src: url('GOTHICB.TTF') format('truetype'),
+
+url('GOTHICB.TTF') format('truetype');
+
+font-weight: normal;
+
+font-style: normal;
+
+}
+
+@font-face{
+
+font-family: 'roboto_bold';
+
+src: url('Roboto-Bold.ttf');
+
+src: url('Roboto-Bold.ttf') format('truetype'),
+
+url('Roboto-Bold.ttf') format('truetype');
+
+font-weight: normal;
+
+font-style: normal;
+
+}
+
+@font-face{
+
+font-family: 'roboto_medium';
+
+src: url('Roboto-Medium.ttf');
+
+src: url('Roboto-Medium.ttf') format('truetype'),
+
+url('Roboto-Medium.ttf') format('truetype');
+
+font-weight: normal;
+
+font-style: normal;
+
+}
+
+@font-face{
+
+font-family: 'roboto_regular';
+
+src: url('Roboto-Regular.ttf');
+
+src: url('Roboto-Regular.ttf') format('truetype'),
+
+url('Roboto-Regular.ttf') format('truetype');
+
+font-weight: normal;
+
+font-style: normal;
+
+}
