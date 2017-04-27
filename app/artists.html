@@ -124,24 +124,13 @@
 	<div class="container profs">
 		<div class="row">
 
+		<!-- НАЧАЛО Блока для вывода в цикле по профессиям --> 
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 artist_prof" data-id="all" >
-
 				<div class="title">Режисер-постановник</div>
-
-				<div class="visible-xs visible-sm arr_left" data-side="left"><span class="glyphicon glyphicon-chevron-left"></span></div>
-
-				<div class="visible-xs visible-sm arr_right" data-side="right"><span class="glyphicon glyphicon-chevron-right"></span></div>
 				<div class="carousel-wrapp">
-					<div class="single_artist">
-						<a href="">
-							<div class="artist_photo">
-								<img src="img/single_artist.jpg" alt="Марія Ремньова">
-							</div>
-							<div class="artist_name">Марія Ремньова</div>
-						</a>
-					</div>
 
-					<div class="single_artist">
+				<!-- НАЧАЛО Блок для вывода в цикле  артистов, пренадлежащих к определенной профессии --> 
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 single_artist">
 						<a href="">
 							<div class="artist_photo">
 								<img src="img/single_artist.jpg" alt="Марія Ремньова">
@@ -149,7 +138,8 @@
 							<div class="artist_name">Марія Ремньова</div>
 						</a>
 					</div>
-					<div class="single_artist">
+				<!-- КОНЕЦ Блока для вывода в цикле  артистов, пренадлежащих к определенной профессии --> 
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 single_artist">
 						<a href="">
 							<div class="artist_photo">
 								<img src="img/single_artist.jpg" alt="Марія Ремньова">
@@ -157,7 +147,15 @@
 							<div class="artist_name">Марія Ремньова</div>
 						</a>
 					</div>
-					<div class="single_artist">
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 single_artist">
+						<a href="">
+							<div class="artist_photo">
+								<img src="img/single_artist.jpg" alt="Марія Ремньова">
+							</div>
+							<div class="artist_name">Марія Ремньова</div>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 single_artist">
 						<a href="">
 							<div class="artist_photo">
 								<img src="img/single_artist.jpg" alt="Марія Ремньова">
@@ -165,18 +163,14 @@
 							<div class="artist_name">Марія Ремньова</div>
 						</a>
 					</div>	
-				</div>			
-			</div>
-
+				</div>	<!-- end .carousel-wrapp -->		
+			</div>  
+			<!-- КОНЕЦ Блока для вывода в цикле по профессиям --> 
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 artist_prof" data-id="trainer" >
 				<div class="title">Дресирувальники</div>
-					<div class="visible-xs visible-sm arr_left" data-side="left"><span class="glyphicon glyphicon-chevron-left"></span></div>
-
-				<div class="visible-xs visible-sm arr_right" data-side="right"><span class="glyphicon glyphicon-chevron-right"></span></div>
-
+					
 				<div class="carousel-wrapp">
-				
-					<div class="single_artist">
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 single_artist">
 						<a href="">
 							<div class="artist_photo">
 								<img src="img/single_artist.jpg" alt="Марія Ремньова">
@@ -184,7 +178,7 @@
 							<div class="artist_name">Марія Ремньова</div>
 						</a>
 					</div>
-					<div class="single_artist">
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 single_artist">
 						<a href="">
 							<div class="artist_photo">
 								<img src="img/single_artist.jpg" alt="Марія Ремньова">
@@ -192,7 +186,7 @@
 							<div class="artist_name">Марія Ремньова</div>
 						</a>
 					</div>
-					<div class="single_artist">
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 single_artist">
 						<a href="">
 							<div class="artist_photo">
 								<img src="img/single_artist.jpg" alt="Марія Ремньова">
@@ -200,7 +194,7 @@
 							<div class="artist_name">Марія Ремньова</div>
 						</a>
 					</div>
-					<div class="single_artist">
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 single_artist">
 						<a href="">
 							<div class="artist_photo">
 								<img src="img/single_artist.jpg" alt="Марія Ремньова">
@@ -208,7 +202,7 @@
 							<div class="artist_name">Марія Ремньова</div>
 						</a>
 					</div>
-					<div class="single_artist">
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 single_artist">
 						<a href="">
 							<div class="artist_photo">
 								<img src="img/single_artist.jpg" alt="Марія Ремньова">
@@ -216,7 +210,7 @@
 							<div class="artist_name">Марія Ремньова</div>
 						</a>
 					</div>
-					<div class="single_artist">
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 single_artist">
 						<a href="">
 							<div class="artist_photo">
 								<img src="img/single_artist.jpg" alt="Марія Ремньова">
@@ -228,228 +222,233 @@
 			</div>
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 artist_prof" data-id="acrobats" >
 				<div class="title">Акробати</div>
-					<div class="visible-xs arr_left"><span class="glyphicon glyphicon-chevron-left"></span></div>
-					<div class="visible-xs arr_right"><span class="glyphicon glyphicon-chevron-right"></span></div>
-				<div class="single_artist">
-					<a href="">
-						<div class="artist_photo">
-							<img src="img/single_artist.jpg" alt="Марія Ремньова">
-						</div>
-						<div class="artist_name">Марія Ремньова</div>
-					</a>
-				</div>
-				<div class="single_artist">
-					<a href="">
-						<div class="artist_photo">
-							<img src="img/single_artist.jpg" alt="Марія Ремньова">
-						</div>
-						<div class="artist_name">Марія Ремньова</div>
-					</a>
-				</div>
-				<div class="single_artist">
-					<a href="">
-						<div class="artist_photo">
-							<img src="img/single_artist.jpg" alt="Марія Ремньова">
-						</div>
-						<div class="artist_name">Марія Ремньова</div>
-					</a>
-				</div>
-				<div class="single_artist">
-					<a href="">
-						<div class="artist_photo">
-							<img src="img/single_artist.jpg" alt="Марія Ремньова">
-						</div>
-						<div class="artist_name">Марія Ремньова</div>
-					</a>
-				</div>				
+				<div class="carousel-wrapp">	
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 single_artist">
+						<a href="">
+							<div class="artist_photo">
+								<img src="img/single_artist.jpg" alt="Марія Ремньова">
+							</div>
+							<div class="artist_name">Марія Ремньова</div>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 single_artist">
+						<a href="">
+							<div class="artist_photo">
+								<img src="img/single_artist.jpg" alt="Марія Ремньова">
+							</div>
+							<div class="artist_name">Марія Ремньова</div>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 single_artist">
+						<a href="">
+							<div class="artist_photo">
+								<img src="img/single_artist.jpg" alt="Марія Ремньова">
+							</div>
+							<div class="artist_name">Марія Ремньова</div>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 single_artist">
+						<a href="">
+							<div class="artist_photo">
+								<img src="img/single_artist.jpg" alt="Марія Ремньова">
+							</div>
+							<div class="artist_name">Марія Ремньова</div>
+						</a>
+					</div>	
+				</div>			
 			</div>
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 artist_prof" data-id="clowns" >
 				<div class="title">Клоуни</div>
-					<div class="visible-xs arr_left"><span class="glyphicon glyphicon-chevron-left"></span></div>
-					<div class="visible-xs arr_right"><span class="glyphicon glyphicon-chevron-right"></span></div>
-				<div class="single_artist">
-					<a href="">
-						<div class="artist_photo">
-							<img src="img/single_artist.jpg" alt="Марія Ремньова">
-						</div>
-						<div class="artist_name">Марія Ремньова</div>
-					</a>
-				</div>
-				<div class="single_artist">
-					<a href="">
-						<div class="artist_photo">
-							<img src="img/single_artist.jpg" alt="Марія Ремньова">
-						</div>
-						<div class="artist_name">Марія Ремньова</div>
-					</a>
-				</div>
-				<div class="single_artist">
-					<a href="">
-						<div class="artist_photo">
-							<img src="img/single_artist.jpg" alt="Марія Ремньова">
-						</div>
-						<div class="artist_name">Марія Ремньова</div>
-					</a>
-				</div>
-				<div class="single_artist">
-					<a href="">
-						<div class="artist_photo">
-							<img src="img/single_artist.jpg" alt="Марія Ремньова">
-						</div>
-						<div class="artist_name">Марія Ремньова</div>
-					</a>
+					
+				<div class="carousel-wrapp">	
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 single_artist">
+						<a href="">
+							<div class="artist_photo">
+								<img src="img/single_artist.jpg" alt="Марія Ремньова">
+							</div>
+							<div class="artist_name">Марія Ремньова</div>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 single_artist">
+						<a href="">
+							<div class="artist_photo">
+								<img src="img/single_artist.jpg" alt="Марія Ремньова">
+							</div>
+							<div class="artist_name">Марія Ремньова</div>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 single_artist">
+						<a href="">
+							<div class="artist_photo">
+								<img src="img/single_artist.jpg" alt="Марія Ремньова">
+							</div>
+							<div class="artist_name">Марія Ремньова</div>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 single_artist">
+						<a href="">
+							<div class="artist_photo">
+								<img src="img/single_artist.jpg" alt="Марія Ремньова">
+							</div>
+							<div class="artist_name">Марія Ремньова</div>
+						</a>
+					</div>
 				</div>				
 			</div>
 
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 artist_prof" data-id="ballet" >
 				<div class="title">Артисти балета</div>
-					<div class="visible-xs arr_left"><span class="glyphicon glyphicon-chevron-left"></span></div>
-					<div class="visible-xs arr_right"><span class="glyphicon glyphicon-chevron-right"></span></div>
-				<div class="single_artist">
-					<a href="">
-						<div class="artist_photo">
-							<img src="img/single_artist.jpg" alt="Марія Ремньова">
-						</div>
-						<div class="artist_name">Марія Ремньова</div>
-					</a>
-				</div>
-				<div class="single_artist">
-					<a href="">
-						<div class="artist_photo">
-							<img src="img/single_artist.jpg" alt="Марія Ремньова">
-						</div>
-						<div class="artist_name">Марія Ремньова</div>
-					</a>
-				</div>
-				<div class="single_artist">
-					<a href="">
-						<div class="artist_photo">
-							<img src="img/single_artist.jpg" alt="Марія Ремньова">
-						</div>
-						<div class="artist_name">Марія Ремньова</div>
-					</a>
-				</div>
-				<div class="single_artist">
-					<a href="">
-						<div class="artist_photo">
-							<img src="img/single_artist.jpg" alt="Марія Ремньова">
-						</div>
-						<div class="artist_name">Марія Ремньова</div>
-					</a>
-				</div>				
+					
+				<div class="carousel-wrapp">	
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 single_artist">
+						<a href="">
+							<div class="artist_photo">
+								<img src="img/single_artist.jpg" alt="Марія Ремньова">
+							</div>
+							<div class="artist_name">Марія Ремньова</div>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 single_artist">
+						<a href="">
+							<div class="artist_photo">
+								<img src="img/single_artist.jpg" alt="Марія Ремньова">
+							</div>
+							<div class="artist_name">Марія Ремньова</div>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 single_artist">
+						<a href="">
+							<div class="artist_photo">
+								<img src="img/single_artist.jpg" alt="Марія Ремньова">
+							</div>
+							<div class="artist_name">Марія Ремньова</div>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 single_artist">
+						<a href="">
+							<div class="artist_photo">
+								<img src="img/single_artist.jpg" alt="Марія Ремньова">
+							</div>
+							<div class="artist_name">Марія Ремньова</div>
+						</a>
+					</div>
+				</div>			
 			</div>
 
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 artist_prof" data-id="orchestra" >
 				<div class="title">Артисти оркестра</div>
-					<div class="visible-xs arr_left"><span class="glyphicon glyphicon-chevron-left"></span></div>
-					<div class="visible-xs arr_right"><span class="glyphicon glyphicon-chevron-right"></span></div>
-				<div class="single_artist">
-					<a href="">
-						<div class="artist_photo">
-							<img src="img/single_artist.jpg" alt="Марія Ремньова">
-						</div>
-						<div class="artist_name">Марія Ремньова</div>
-					</a>
-				</div>
-				<div class="single_artist">
-					<a href="">
-						<div class="artist_photo">
-							<img src="img/single_artist.jpg" alt="Марія Ремньова">
-						</div>
-						<div class="artist_name">Марія Ремньова</div>
-					</a>
-				</div>
-				<div class="single_artist">
-					<a href="">
-						<div class="artist_photo">
-							<img src="img/single_artist.jpg" alt="Марія Ремньова">
-						</div>
-						<div class="artist_name">Марія Ремньова</div>
-					</a>
-				</div>
-				<div class="single_artist">
-					<a href="">
-						<div class="artist_photo">
-							<img src="img/single_artist.jpg" alt="Марія Ремньова">
-						</div>
-						<div class="artist_name">Марія Ремньова</div>
-					</a>
-				</div>				
+					
+				<div class="carousel-wrapp">	
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 single_artist">
+						<a href="">
+							<div class="artist_photo">
+								<img src="img/single_artist.jpg" alt="Марія Ремньова">
+							</div>
+							<div class="artist_name">Марія Ремньова</div>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 single_artist">
+						<a href="">
+							<div class="artist_photo">
+								<img src="img/single_artist.jpg" alt="Марія Ремньова">
+							</div>
+							<div class="artist_name">Марія Ремньова</div>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 single_artist">
+						<a href="">
+							<div class="artist_photo">
+								<img src="img/single_artist.jpg" alt="Марія Ремньова">
+							</div>
+							<div class="artist_name">Марія Ремньова</div>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 single_artist">
+						<a href="">
+							<div class="artist_photo">
+								<img src="img/single_artist.jpg" alt="Марія Ремньова">
+							</div>
+							<div class="artist_name">Марія Ремньова</div>
+						</a>
+					</div>
+				</div>			
 			</div>
 
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 artist_prof" data-id="assistants" >
 				<div class="title">Асистенти</div>
-					<div class="visible-xs arr_left"><span class="glyphicon glyphicon-chevron-left"></span></div>
-					<div class="visible-xs arr_right"><span class="glyphicon glyphicon-chevron-right"></span></div>
-				<div class="single_artist">
-					<a href="">
-						<div class="artist_photo">
-							<img src="img/single_artist.jpg" alt="Марія Ремньова">
-						</div>
-						<div class="artist_name">Марія Ремньова</div>
-					</a>
-				</div>
-				<div class="single_artist">
-					<a href="">
-						<div class="artist_photo">
-							<img src="img/single_artist.jpg" alt="Марія Ремньова">
-						</div>
-						<div class="artist_name">Марія Ремньова</div>
-					</a>
-				</div>
-				<div class="single_artist">
-					<a href="">
-						<div class="artist_photo">
-							<img src="img/single_artist.jpg" alt="Марія Ремньова">
-						</div>
-						<div class="artist_name">Марія Ремньова</div>
-					</a>
-				</div>
-				<div class="single_artist">
-					<a href="">
-						<div class="artist_photo">
-							<img src="img/single_artist.jpg" alt="Марія Ремньова">
-						</div>
-						<div class="artist_name">Марія Ремньова</div>
-					</a>
+					
+				<div class="carousel-wrapp">	
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 single_artist">
+						<a href="">
+							<div class="artist_photo">
+								<img src="img/single_artist.jpg" alt="Марія Ремньова">
+							</div>
+							<div class="artist_name">Марія Ремньова</div>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 single_artist">
+						<a href="">
+							<div class="artist_photo">
+								<img src="img/single_artist.jpg" alt="Марія Ремньова">
+							</div>
+							<div class="artist_name">Марія Ремньова</div>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 single_artist">
+						<a href="">
+							<div class="artist_photo">
+								<img src="img/single_artist.jpg" alt="Марія Ремньова">
+							</div>
+							<div class="artist_name">Марія Ремньова</div>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 single_artist">
+						<a href="">
+							<div class="artist_photo">
+								<img src="img/single_artist.jpg" alt="Марія Ремньова">
+							</div>
+							<div class="artist_name">Марія Ремньова</div>
+						</a>
+					</div>
 				</div>				
 			</div>
 
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 artist_prof" data-id="tutors" >
 				<div class="title">Репетитори номерів</div>
-					<div class="visible-xs arr_left"><span class="glyphicon glyphicon-chevron-left"></span></div>
-					<div class="visible-xs arr_right"><span class="glyphicon glyphicon-chevron-right"></span></div>
-				<div class="single_artist">
-					<a href="">
-						<div class="artist_photo">
-							<img src="img/single_artist.jpg" alt="Марія Ремньова">
-						</div>
-						<div class="artist_name">Марія Ремньова</div>
-					</a>
-				</div>
-				<div class="single_artist">
-					<a href="">
-						<div class="artist_photo">
-							<img src="img/single_artist.jpg" alt="Марія Ремньова">
-						</div>
-						<div class="artist_name">Марія Ремньова</div>
-					</a>
-				</div>
-				<div class="single_artist">
-					<a href="">
-						<div class="artist_photo">
-							<img src="img/single_artist.jpg" alt="Марія Ремньова">
-						</div>
-						<div class="artist_name">Марія Ремньова</div>
-					</a>
-				</div>
-				<div class="single_artist">
-					<a href="">
-						<div class="artist_photo">
-							<img src="img/single_artist.jpg" alt="Марія Ремньова">
-						</div>
-						<div class="artist_name">Марія Ремньова</div>
-					</a>
+					
+				<div class="carousel-wrapp">	
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 single_artist">
+						<a href="">
+							<div class="artist_photo">
+								<img src="img/single_artist.jpg" alt="Марія Ремньова">
+							</div>
+							<div class="artist_name">Марія Ремньова</div>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 single_artist">
+						<a href="">
+							<div class="artist_photo">
+								<img src="img/single_artist.jpg" alt="Марія Ремньова">
+							</div>
+							<div class="artist_name">Марія Ремньова</div>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 single_artist">
+						<a href="">
+							<div class="artist_photo">
+								<img src="img/single_artist.jpg" alt="Марія Ремньова">
+							</div>
+							<div class="artist_name">Марія Ремньова</div>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 single_artist">
+						<a href="">
+							<div class="artist_photo">
+								<img src="img/single_artist.jpg" alt="Марія Ремньова">
+							</div>
+							<div class="artist_name">Марія Ремньова</div>
+						</a>
+					</div>
 				</div>				
 			</div>
 		</div><!-- .row -->
@@ -506,6 +505,7 @@
 	<!-- bower:js -->
 	<script src="libs/jquery/dist/jquery.js"></script>
 	<script src="libs/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="js/slick.js"></script>
 	<!-- endbower -->
 	<!-- endbuild -->
 	

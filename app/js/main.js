@@ -37,22 +37,24 @@ $(document).ready(function(){
 	}
 
 
+	$('.gen-nav li a').click(function(event) {
+		event.preventDefault();
+	});
 
 
 
-
-	// if (screen_w <= 768) {
-
-
-	// 	$('.multiple-items').slick({
-	// 	  infinite: true,
-	// 	  slidesToShow: 3,
-	// 	  slidesToScroll: 3
-	// 	})
+	if (screen_w <= 768) {
 
 
+		$('.carousel-wrapp').slick({
+		  infinite: true,
+		  slidesToShow: 2,
+		  slidesToScroll: 2
+		})
 
-	// }
+
+
+	}
 
 	//anymation about circus
 	$(".block_btn").each(function(index, el) {
@@ -196,39 +198,39 @@ $(document).ready(function(){
 
 // ARTISTS CARIUSEL
 
-var car_wrap_w= $('.carousel-wrapp').each(function(index, el) {
+// var car_wrap_w= $('.carousel-wrapp').each(function(index, el) {
 
-		var count_items      = $(el).find('.single_artist').length,
-			single_artist_w  = $(el).find('.single_artist').width(),
-			title_w          = $('div .title').width(),
-			center_wrap      = title_w - single_artist_w *2 ;	
-			// console.log(title_w);
-			// console.log(single_artist_w);
-			// console.log(single_artist_w - title_w);	
+// 		var count_items      = $(el).find('.single_artist').length,
+// 			single_artist_w  = $(el).find('.single_artist').width(),
+// 			title_w          = $('div .title').width(),
+// 			center_wrap      = title_w - single_artist_w *2 ;	
+// 			// console.log(title_w);
+// 			// console.log(single_artist_w);
+// 			// console.log(single_artist_w - title_w);	
 
-			// console.log(center_wrap);
+// 			// console.log(center_wrap);
 
 
-			$(el).find('.single_artist').each(function(index, el) {
-				$(el).css('width', (single_artist_w *2)+'px');
-			});
+// 			$(el).find('.single_artist').each(function(index, el) {
+// 				$(el).css('width', (single_artist_w *2)+'px');
+// 			});
 		
 			
 
-			single_artist_w  = $(el).find('.single_artist').width();
+// 			single_artist_w  = $(el).find('.single_artist').width();
 
-			var wrap_total_width = single_artist_w * count_items;
+// 			var wrap_total_width = single_artist_w * count_items;
 		
-			//$(el).css('width', (wrap_total_width + 20) +'px');
-			$(el).css({
-				'width': (wrap_total_width + 20) +'px',
-				'margin-left': center_wrap + 'px'
-			});
+// 			//$(el).css('width', (wrap_total_width + 20) +'px');
+// 			$(el).css({
+// 				'width': (wrap_total_width + 20) +'px',
+// 				'margin-left': center_wrap + 'px'
+// 			});
 
 
 
-	// console.log(single_artist_w - title_w);
-});
+// 	// console.log(single_artist_w - title_w);
+// });
 
 
 

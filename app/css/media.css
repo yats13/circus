@@ -668,14 +668,12 @@
     }
 
     #artists .profs .row .artist_prof {
-       height: 287px;
+      
        overflow: hidden;
        margin: 20px 0 0 0;
 
     }
-    #artists .profs .row .artist_prof .title{
-        width: 94.5%;
-    }
+
 
     #artists .profs .row .artist_prof .single_artist{
     display: inline-block;
@@ -684,25 +682,23 @@
     #artists .profs .row .artist_prof .single_artist a .artist_name {
     font-size: 16px;
     }
-
-    #artists .profs .row .artist_prof .single_artist a .artist_photo img {
-
-    /* max-height: 220px;*/
+    #artists .profs .row .artist_prof .carousel-wrapp .slick-arrow {
+        font-size: 2rem;
     }
 
-        #ask_page_header {
-            height: 268px;
-            background: url(../img/dictionary_bg_480.jpg);
-            margin-top: 52px;
-        }
-        #ask_page_header .text h1 {
-            font-size: 36px;
-            margin: 135px 0 7px 0;
-        }
-        #ask_page_header .text p {
-            width: 85%;
-            font-size: 16px;
-        }
+    #ask_page_header {
+        height: 268px;
+        background: url(../img/dictionary_bg_480.jpg);
+        margin-top: 52px;
+    }
+    #ask_page_header .text h1 {
+        font-size: 36px;
+        margin: 135px 0 7px 0;
+    }
+    #ask_page_header .text p {
+        width: 85%;
+        font-size: 16px;
+    }
 
 }
 
@@ -906,13 +902,10 @@
     }
 
     #artists .profs .row .artist_prof {
-       height: 205px;
        overflow: hidden;
        margin: 20px 0 0 0;
     }
-    #artists .profs .row .artist_prof .title{
-        width: 93%;
-    }
+
 
     #artists .profs .row .artist_prof .single_artist{
     display: inline-block;

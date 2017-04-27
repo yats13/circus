@@ -37,7 +37,7 @@ gulp.task('server', function() {
   gulp.src('app')
     .pipe(server({
       livereload: true,
-      defaultFile: 'index.html',
+      defaultFile: 'artists.html',
       open: true
     }));
 });

@@ -70,10 +70,27 @@ $menuHeight: 74px
 				line-height: 0
 				padding: 0
 				font-family: openSans_semibold
+				position: relative
+
 				span
 					font-size: 0.8125rem
 					color: #737070
 					margin-left: 6px
+				&:after
+					content: ''
+					position: absolute
+					width: 100%
+					height: 2px
+					background: $firmColor
+					bottom: -20px
+					left: 0
+					transition: all 100ms linear
+					opacity: 0
+				&:hover
+					&:after
+						bottom: 0
+						opacity: 1
+
 			.sub_menu
 				display: none
 				position: absolute
@@ -87,6 +104,13 @@ $menuHeight: 74px
 					border-bottom: 1px solid silver
 					width: 100%
 					margin: 0
+					a
+						&:after
+							content: ''
+							position: absolute
+							width: 0
+							height: 0
+
 		.drop_down
 			position: relative
 			&:hover .sub_menu, &:focus .sub_menu
@@ -1090,6 +1114,7 @@ footer
 			color: #fff
 			background: $firmColor
 			box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0)
+			z-index: 0
 			&:after
 				content: ''
 				position: absolute
@@ -1101,48 +1126,37 @@ footer
 				background: $firmColor
 
 	.profs
-		margin: 0 0 40px 0
+		padding: 0 0 40px 0
 		.row
+			
+			margin: 0
 			.artist_prof
 				margin: 40px 0 0 0
 				overflow: hidden
-				animation: all 400ms linear
-				// display: flex
-				// justify-content: space-between
-				// flex-wrap: wrap
-				.arr_left, .arr_right
-					position: absolute
-					height: 100%
-					color: $firmColor
-					font-size: 1.5625rem
-					padding-top: 20%
-					z-index: 1
-				.arr_left
-					left: 0
-				.arr_right
-					right: 0
-					
+				
+				
 				.title
 					color: $firmColor
 					font-size: 1.25rem
 					border-bottom: 1px solid $firmColor
 					font-family: openSans_bold
-					margin: 0 0 0 10px
+				
 					
 				.carousel-wrapp
-					margin-left: 0
-					animation: all 400ms linear
+					text-align: center
+					overflow: hidden
+					position: relative
+					z-index: 0
 					.single_artist
 						margin: 15px 0 0 0
 						padding: 0
-						width: 24.7%
-						display: inline-block
 						a
+							outline: none
 							text-decoration: none
 							.artist_photo
 								padding: 0 10px 0 10px
 								img
-									width: 92%
+									width: 100%
 									display: block
 									margin: 0 auto
 							.artist_name
@@ -1155,7 +1169,19 @@ footer
 							&:hover .artist_name
 								color: $firmColor
 								text-decoration: underline
-
+					.slick-arrow
+						position: absolute
+						height: 100%
+						border: none
+						background: transparent
+						font-size: 4rem
+						color: $firmColor
+						outline: none
+						z-index: 1
+					.slick-prev
+						z-index: 20
+					.slick-next
+						right: 0
 
 /* SINGLE_ARTIST */
 
